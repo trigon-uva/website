@@ -26,7 +26,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-3 group">
           <div className="relative">
             <Image 
-              src="/logo.jpg" 
+              src="/trigonnobg.png" 
               alt="Trigon Logo" 
               width={48} 
               height={48} 

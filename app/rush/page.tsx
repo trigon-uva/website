@@ -5,9 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 const carouselImages = [
-  { src: "/121-shamrock-road.jpg", alt: "121 Shamrock Road" },
-  { src: "/lawn.jpg", alt: "Trigon Lawn" },
-  { src: "/rush-hero.jpg", alt: "Rush Hero" },
+  { src: "/group.jpg", alt: "Trigon Brotherhood" },
+  { src: "/rnb.jpg", alt: "Member Class 2025" },
 ];
 
 function Carousel() {
@@ -20,7 +19,7 @@ function Carousel() {
   }, []);
 
   return (
-    <div className="relative w-full h-full min-h-[400px] rounded-2xl overflow-hidden shadow-modern-lg">
+    <div className="relative w-full h-full min-h-[600px]">
       {carouselImages.map((img, i) => (
         <div
           key={img.src}
@@ -28,17 +27,17 @@ function Carousel() {
             i === index ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
           }`}
         >
-          <Image src={img.src} alt={img.alt} fill className="object-cover" />
+          <Image src={img.src} alt={img.alt} fill className="object-cover brightness-110" priority />
         </div>
       ))}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/25 to-black/10"></div>
       
       {/* Carousel indicators */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3">
         {carouselImages.map((_, i) => (
           <button
             key={i}
-            className={`w-3 h-3 rounded-full transition-all ${
+            className={`w-2.5 h-2.5 rounded-full transition-all ${
               i === index ? 'bg-white' : 'bg-white/50'
             }`}
             onClick={() => setIndex(i)}
@@ -55,19 +54,25 @@ export default function Rush() {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="relative pt-20 pb-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
-                Join
-              </span>
-              <span className="text-gray-900"> Trigon</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Rush is your opportunity to discover our brotherhood, meet amazing engineers, and become part of a legacy that spans generations.
-            </p>
+            {/* Hero Section */}
+      <div className="relative min-h-[600px] -mt-20">
+        <Carousel />
+        <div className="absolute inset-0 flex items-end justify-center pb-24">
+          <div className="max-w-7xl w-full px-6">
+            <div className="text-center max-w-4xl mx-auto">
+              <h1 className="text-6xl md:text-8xl font-bold mb-4 text-white">
+                <span className="bg-gradient-to-r from-red-800 to-red-600 bg-clip-text text-transparent">
+                  Join Trigon
+                </span>
+              </h1>
+            </div>
           </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 pt-20">
+          {/* Interest Form Card */}
+          <div className="max-w-4xl mx-auto mb-20">
 
           {/* Interest Form Card */}
           <div className="max-w-4xl mx-auto mb-20">
@@ -90,7 +95,7 @@ export default function Rush() {
           </div>
 
           {/* Calendar Section */}
-          <div className="mb-20">
+          <div className="mb-20 -mx-6 px-6 md:-mx-12 md:px-12 xl:-mx-48 xl:px-24">
             <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-4">
               Rush <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">Calendar</span>
             </h2>
@@ -98,7 +103,7 @@ export default function Rush() {
               Join us for these exciting events and discover what Trigon is all about
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10">
               {[
                 {
                   image: "/expo.png",
@@ -138,7 +143,7 @@ export default function Rush() {
                 },
                 {
                   image: "/canes2.jpg",
-                  title: "Canes and Games",
+                  title: "Canes and Games on the Lawn",
                   date: "SEP 10",
                   time: "5pm - 8pm",
                   location: "17 West Lawn",
@@ -219,7 +224,7 @@ export default function Rush() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex items-center space-x-6">
-              <Image src="/logo.jpg" alt="Trigon Logo" width={80} height={80} className="rounded-full shadow-lg" />
+              <Image src="/trigonnobg.png" alt="Trigon Logo" width={80} height={80} className="rounded-full shadow-lg" />
               <div>
                 <h3 className="text-2xl font-bold mb-2">Trigon Engineering Society</h3>
                 <p className="text-gray-300 mb-2">University of Virginia • Charlottesville, VA</p>
