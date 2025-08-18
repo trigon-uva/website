@@ -27,7 +27,7 @@ function Carousel() {
             i === index ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
           }`}
         >
-          <Image src={img.src} alt={img.alt} fill className="object-cover brightness-110" priority />
+          <Image src={img.src} alt={img.alt} fill className="object-cover brightness-120" priority />
         </div>
       ))}
       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/25 to-black/10"></div>
