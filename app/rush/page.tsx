@@ -101,7 +101,7 @@ export default function Rush() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 {
-                  image: "/rush-hero.jpg",
+                  image: "/bodos.jpg",
                   title: "Bodo's Bagels on Eway",
                   date: "SEP 1",
                   time: "9am - 12pm",
@@ -110,7 +110,7 @@ export default function Rush() {
                   color: "from-orange-500 to-amber-500"
                 },
                 {
-                  image: "/121-shamrock-road.jpg",
+                  image: "/around-the-world.jpg",
                   title: "Around the World Party",
                   date: "SEP 5",
                   time: "10pm",
@@ -119,7 +119,7 @@ export default function Rush() {
                   color: "from-blue-500 to-cyan-500"
                 },
                 {
-                  image: "/lawn.jpg",
+                  image: "/canes.jpg",
                   title: "Canes and Games",
                   date: "SEP 10",
                   time: "5pm - 8pm",
@@ -128,7 +128,7 @@ export default function Rush() {
                   color: "from-green-500 to-emerald-500"
                 },
                 {
-                  image: "/trigon-society.png",
+                  image: "/seven-deadly-sins.jpg",
                   title: "7 Deadly Sins Party",
                   date: "SEP 12",
                   time: "10pm",
