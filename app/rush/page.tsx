@@ -83,7 +83,19 @@ export default function Rush() {
         <div className="w-full max-w-6xl mb-12">
           <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Rush Calendar</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {/* Event 1 */}
+            {/* Event: Engineering Expo Booth */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+              <div className="relative w-full h-48">
+                <Image src="/rush/expo.png" alt="Engineering Expo Booth" fill className="object-cover" />
+              </div>
+              <div className="p-5 flex-1 flex flex-col">
+                <div className="font-bold text-lg text-blue-900 mb-1">Engineering Expo Booth</div>
+                <div className="text-xs text-gray-500 mb-1">AUG 26 &bull; 9am - 2pm</div>
+                <div className="text-sm text-gray-700 mb-1">Location: Dardent Courtyard</div>
+                <div className="text-gray-700 text-sm flex-1">Stop by our booth at the Engineering Expo to learn more about Trigon and meet our members!</div>
+              </div>
+            </div>
+            {/* Event: Bodo's Bagels on Eway */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
               <div className="relative w-full h-48">
                 <Image src="/bodos.jpg" alt="Bodo's Bagels Event" fill className="object-cover" />
@@ -95,7 +107,7 @@ export default function Rush() {
                 <div className="text-gray-700 text-sm flex-1">Come enjoy some Bodo's Bagels and meet active brothers.</div>
               </div>
             </div>
-            {/* Event 2 */}
+            {/* Event: Around the World Party */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
               <div className="relative w-full h-48">
                 <Image src="/around-the-world.jpg" alt="Around the World Party" fill className="object-cover" />
@@ -107,10 +119,22 @@ export default function Rush() {
                 <div className="text-gray-700 text-sm flex-1">Come have fun at the Trigon House and meet the brothers and travel around the world.</div>
               </div>
             </div>
-            {/* Event 3 */}
+            {/* Event: Football Game Watch Party */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
               <div className="relative w-full h-48">
-                <Image src="/canes.jpg" alt="Canes and Games" fill className="object-cover" />
+                <Image src="/rush/football-watch-party.jpg" alt="Football Game Watch Party" fill className="object-cover" />
+              </div>
+              <div className="p-5 flex-1 flex flex-col">
+                <div className="font-bold text-lg text-blue-900 mb-1">Football Game Watch Party</div>
+                <div className="text-xs text-gray-500 mb-1">SEP 6 &bull; 12pm - 4pm</div>
+                <div className="text-sm text-gray-700 mb-1">Location: 121 Shamrock Road</div>
+                <div className="text-gray-700 text-sm flex-1">Join us for a football game watch party with snacks and friends at the Trigon House!</div>
+              </div>
+            </div>
+            {/* Event: Canes and Games */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+              <div className="relative w-full h-48">
+                <Image src="/rush/canes2.jpg" alt="Canes and Games" fill className="object-cover" />
               </div>
               <div className="p-5 flex-1 flex flex-col">
                 <div className="font-bold text-lg text-blue-900 mb-1">Canes and Games</div>
@@ -119,7 +143,7 @@ export default function Rush() {
                 <div className="text-gray-700 text-sm flex-1">Come enjoy some Raising Canes Chicken and play some lawn games by the Trigon Lawn Room.</div>
               </div>
             </div>
-            {/* Event 4 */}
+            {/* Event: 7 Deadly Sins Party */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
               <div className="relative w-full h-48">
                 <Image src="/seven-deadly-sins.jpg" alt="7 Deadly Sins Party" fill className="object-cover" />
@@ -134,29 +158,31 @@ export default function Rush() {
           </div>
         </div>
 
-        {/* FAQ Section */}
-        <div className="w-full max-w-2xl">
-          <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-center">FAQ</h3>
-          <div className="space-y-6">
-            <div>
-              <p className="font-bold text-gray-900">Do I have to attend every rush event?</p>
-              <p className="text-gray-800">Nope! You only have to come to 1 to be considered (but we would love it if you come to more).</p>
-            </div>
-            <div>
-              <p className="font-bold text-gray-900">Is Trigon a fraternity?</p>
-              <p className="text-gray-800">No. Trigon is registered as a CIO (Contracted Independent Organization) with UVA. We have many members that are in both Trigon and a traditional social Fraternity/Sorority.</p>
-            </div>
-            <div>
-              <p className="font-bold text-gray-900">Do I have to be an engineering to join?</p>
-              <p className="text-gray-800">You are required to be enrolled in the Engineering School to join Trigon.</p>
-            </div>
-            <div>
-              <p className="font-bold text-gray-900">What’s the time commitment?</p>
-              <p className="text-gray-800">Trigon is what you make it. We meet every Thursday and have lots of events throughout the year including parties, service events, intramural sports, and an annual semi-formal.</p>
-            </div>
-            <div>
-              <p className="font-bold text-gray-900">Do I have to apply/interview?</p>
-              <p className="text-gray-800">Nope, just show up to the rush events and we will take it from there.</p>
+        {/* FAQ Section with full-width background */}
+        <div className="w-full mb-10" style={{ backgroundColor: '#8B0000' }}>
+          <div className="flex flex-col items-center w-full max-w-2xl mx-auto rounded-lg p-8">
+            <h3 className="text-2xl font-semibold text-white mb-4 text-center">FAQ</h3>
+            <div className="space-y-6 w-full">
+              <div>
+                <p className="font-bold text-white">Do I have to attend every rush event?</p>
+                <p className="text-gray-200">Nope! You only have to come to 1 to be considered (but we would love it if you come to more).</p>
+              </div>
+              <div>
+                <p className="font-bold text-white">Is Trigon a fraternity?</p>
+                <p className="text-gray-200">No. Trigon is registered as a CIO (Contracted Independent Organization) with UVA. We have many members that are in both Trigon and a traditional social Fraternity/Sorority.</p>
+              </div>
+              <div>
+                <p className="font-bold text-white">Do I have to be an engineering to join?</p>
+                <p className="text-gray-200">You are required to be enrolled in the Engineering School to join Trigon.</p>
+              </div>
+              <div>
+                <p className="font-bold text-white">What’s the time commitment?</p>
+                <p className="text-gray-200">Trigon is what you make it. We meet every Thursday and have lots of events throughout the year including parties, service events, intramural sports, and an annual semi-formal.</p>
+              </div>
+              <div>
+                <p className="font-bold text-white">Do I have to apply/interview?</p>
+                <p className="text-gray-200">Nope, just show up to the rush events and we will take it from there.</p>
+              </div>
             </div>
           </div>
         </div>
