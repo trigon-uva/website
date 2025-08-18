@@ -1,28 +1,54 @@
-import React from "react";
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="w-full bg-white shadow flex items-center justify-between px-6 py-6" style={{ minHeight: '80px' }}>
+    <nav
+      className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-white/80 backdrop-blur-md shadow-lg border-b border-gray-200"
+          : "bg-white shadow-md"
+      } flex items-center justify-between px-8 py-4`}
+    >
       <div className="flex items-center gap-4">
         <Link href="/">
-          <Image src="/logo.jpg" alt="Trigon Logo" width={72} height={72} className="rounded-full" />
+          <Image
+            src="/trigon-society.png"
+            alt="Trigon Logo"
+            width={60}
+            height={60}
+          />
+        </Link>
+        <Link href="/">
+          <h1 className="text-2xl font-bold text-gray-800">Trigon Society</h1>
         </Link>
       </div>
       <div className="flex items-center gap-8">
-        {/* About Dropdown */}
-        <div className="relative group">
-          <button className="font-medium text-gray-800 hover:text-blue-700 focus:outline-none">About</button>
-          <div className="absolute left-0 mt-2 w-40 bg-white border rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition-opacity duration-200 z-30">
-            <Link href="/history" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">History</Link>
-            <Link href="/social" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Social</Link>
-            <Link href="/service" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Service</Link>
-            <Link href="/leadership" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Leadership</Link>
-          </div>
-        </div>
-        <Link href="/leadership" className="font-medium text-gray-800 hover:text-blue-700">Leadership</Link>
-        <Link href="/rush" className="font-medium text-gray-800 hover:text-blue-700">Recruitment</Link>
+        <Link href="/about" className="text-lg text-gray-600 hover:text-primary transition-colors">
+          About
+        </Link>
+        <Link href="/members" className="text-lg text-gray-600 hover:text-primary transition-colors">
+          Members
+        </Link>
+        <Link
+          href="/rush"
+          className="bg-primary text-white font-bold px-6 py-3 rounded-full hover:bg-primary-dark transition-all duration-300 shadow-md hover:shadow-lg"
+        >
+          Recruitment
+        </Link>
       </div>
     </nav>
   );
