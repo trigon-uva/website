@@ -98,10 +98,19 @@ export default function Rush() {
               Join us for these exciting events and discover what Trigon is all about
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
-                  image: "/rush-hero.jpg",
+                  image: "/expo.png",
+                  title: "Engineering Expo Booth",
+                  date: "AUG 26",
+                  time: "9am - 2pm",
+                  location: "Darden Courtyard",
+                  description: "Stop by our booth at the Engineering Expo to learn more about Trigon!",
+                  color: "from-blue-500 to-cyan-500"
+                },
+                {
+                  image: "/bodos.jpg",
                   title: "Bodo's Bagels on Eway",
                   date: "SEP 1",
                   time: "9am - 12pm",
@@ -110,16 +119,25 @@ export default function Rush() {
                   color: "from-orange-500 to-amber-500"
                 },
                 {
-                  image: "/121-shamrock-road.jpg",
+                  image: "/party1.jpg",
                   title: "Around the World Party",
                   date: "SEP 5",
                   time: "10pm",
-                  location: "121 Shamrock Road",
+                  location: "Trigon House: 121 Shamrock Road",
                   description: "Come have fun at the Trigon House and travel around the world.",
-                  color: "from-blue-500 to-cyan-500"
+                  color: "from-purple-500 to-pink-500"
                 },
                 {
-                  image: "/lawn.jpg",
+                  image: "/football-watch-party.jpg",
+                  title: "Football Game Watch Party",
+                  date: "SEP 6",
+                  time: "12pm - 4pm",
+                  location: "Trigon House: 121 Shamrock Road",
+                  description: "Join us for a football game watch party with snacks and friends!",
+                  color: "from-red-500 to-orange-500"
+                },
+                {
+                  image: "/canes2.jpg",
                   title: "Canes and Games",
                   date: "SEP 10",
                   time: "5pm - 8pm",
@@ -132,7 +150,7 @@ export default function Rush() {
                   title: "7 Deadly Sins Party",
                   date: "SEP 12",
                   time: "10pm",
-                  location: "121 Shamrock Road",
+                  location: "Trigon House: 121 Shamrock Road",
                   description: "Come have fun at the Trigon House and meet the brothers.",
                   color: "from-purple-500 to-pink-500"
                 }
@@ -171,11 +189,11 @@ export default function Rush() {
                 },
                 {
                   question: "Is Trigon a fraternity?",
-                  answer: "No. Trigon is registered as a CIO (Contracted Independent Organization) with UVA. We have many members that are in both Trigon and a traditional social Fraternity/Sorority."
+                  answer: "No, while many refer to Trigon as an engineering fraternity, we are registered as a CIO (Contracted Independent Organization) with UVA. We have many members that are in both Trigon and a traditional social Fraternity/Sorority."
                 },
                 {
                   question: "Do I have to be an engineer to join?",
-                  answer: "You are required to be enrolled in the Engineering School to join Trigon."
+                  answer: "Yes, you are required to be enrolled in the Engineering School to join Trigon."
                 },
                 {
                   question: "What's the time commitment?",
