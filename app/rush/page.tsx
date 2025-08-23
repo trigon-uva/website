@@ -116,7 +116,6 @@ export default function Rush() {
                 },
                 {
                   image: "/party1.jpg",
-                  image: "/around-the-world.jpg",
                   title: "Around the World Party",
                   date: "SEP 5",
                   time: "10pm",
