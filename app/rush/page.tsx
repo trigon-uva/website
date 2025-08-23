@@ -115,16 +115,8 @@ export default function Rush() {
                   color: "from-blue-500 to-cyan-500"
                 },
                 {
-                  image: "/bodos.jpg",
-                  title: "Bodo's Bagels on Eway",
-                  date: "SEP 1",
-                  time: "9am - 12pm",
-                  location: "Darden Courtyard",
-                  description: "Come enjoy some Bodo's Bagels and meet active brothers.",
-                  color: "from-orange-500 to-amber-500"
-                },
-                {
                   image: "/party1.jpg",
+                  image: "/around-the-world.jpg",
                   title: "Around the World Party",
                   date: "SEP 5",
                   time: "10pm",
@@ -151,7 +143,7 @@ export default function Rush() {
                   color: "from-green-500 to-emerald-500"
                 },
                 {
-                  image: "/trigon-society.png",
+                  image: "/seven-deadly-sins.jpg",
                   title: "7 Deadly Sins Party",
                   date: "SEP 12",
                   time: "10pm",
