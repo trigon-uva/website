@@ -104,7 +104,7 @@ export default function Rush() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10">
-              {[
+              {[ 
                 {
                   image: "/expo.png",
                   title: "Engineering Expo Booth",
@@ -113,6 +113,15 @@ export default function Rush() {
                   location: "Darden Courtyard",
                   description: "Stop by our booth at the Engineering Expo to learn more about Trigon!",
                   color: "from-red-500 to-red-600"
+                },
+                {
+                  image: "/bodos.jpg",
+                  title: "Bodo's Bagels",
+                  date: "SEP 1",
+                  time: "9am - 12pm",
+                  location: "Darden Courtyard",
+                  description: "Come enjoy some Bodo's Bagels and meet active brothers.",
+                  color: "from-yellow-500 to-yellow-600"
                 },
                 {
                   image: "/party1.jpg",
@@ -181,7 +190,7 @@ export default function Rush() {
               {[
                 {
                   question: "Do I have to attend every rush event?",
-                  answer: "Nope! You only have to come to 1 to be considered (but we would love it if you come to more)."
+                  answer: "Nope! There is a lot happening around grounds, we just hope you try to come to as many as you can."
                 },
                 {
                   question: "Is Trigon a fraternity?",
