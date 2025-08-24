@@ -111,16 +111,16 @@ export default function Rush() {
                   date: "AUG 26",
                   time: "9am - 2pm",
                   location: "Darden Courtyard",
-                  description: "Stop by our booth at the Engineering Expo to learn more about Trigon!",
+                  description: "Stop by our booth at the Engineering Expo to meet brothers and learn about Trigon.",
                   color: "from-red-500 to-red-600"
                 },
                 {
-                  image: "/bodos.jpg",
+                  image: "/bodos2.jpg",
                   title: "Bodo's Bagels",
                   date: "SEP 1",
                   time: "9am - 12pm",
                   location: "Darden Courtyard",
-                  description: "Come enjoy some Bodo's Bagels and meet active brothers.",
+                  description: "Enjoy some Bodo's Bagels and coffee while chatting with brothers.",
                   color: "from-yellow-500 to-yellow-600"
                 },
                 {
@@ -129,7 +129,7 @@ export default function Rush() {
                   date: "SEP 5",
                   time: "10pm",
                   location: "Trigon House: 121 Shamrock Road",
-                  description: "Come have fun at the Trigon House and travel around the world.",
+                  description: "Hang out at the Trigon House and travel around the world.",
                   color: "from-purple-500 to-pink-500"
                 },
                 {
@@ -138,7 +138,7 @@ export default function Rush() {
                   date: "SEP 6",
                   time: "12pm - 4pm",
                   location: "Trigon House: 121 Shamrock Road",
-                  description: "Join us for a football game watch party with snacks and friends!",
+                  description: "Eat burgers and hot dogs with the brothers while watching the UVA football game.",
                   color: "from-red-500 to-orange-500"
                 },
                 {
@@ -147,16 +147,16 @@ export default function Rush() {
                   date: "SEP 10",
                   time: "5pm - 8pm",
                   location: "17 West Lawn",
-                  description: "Come enjoy some Raising Canes Chicken and play some lawn games.",
+                  description: "Enjoy some Raising Canes Chicken and play lawn games at the Trigon Lawn Room.",
                   color: "from-green-500 to-emerald-500"
                 },
                 {
-                  image: "/seven-deadly-sins.jpg",
-                  title: "7 Deadly Sins Party",
+                  image: "/jungle.jpg",
+                  title: "Jungle Party",
                   date: "SEP 12",
                   time: "10pm",
                   location: "Trigon House: 121 Shamrock Road",
-                  description: "Come have fun at the Trigon House and meet the brothers.",
+                  description: "Hang out at the Trigon House and enter the jungle.",
                   color: "from-purple-500 to-pink-500"
                 }
               ].map((event, index) => (
