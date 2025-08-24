@@ -1,4 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Trigon Engineering Society Website
+
+This is the official website for the Trigon Engineering Society at the University of Virginia. Trigon is a Contracted Independent Organization (CIO) dedicated to fostering community, leadership, and tradition among engineering students.
+
+## About Trigon Engineering Society
+
+**Motto:** *Per dilligentium crescunt frucuts laboris* (Through diligence the fruits of labor grow)
+
+**Location:** University of Virginia, Charlottesville, VA
+
+Trigon Engineering Society is an organization for students enrolled in the UVA School of Engineering. We welcome all engineering students who are passionate about community, leadership, and tradition. Our members participate in a variety of activities including social events, service projects, intramural sports, and our annual semi-formal.
+
+## Website Features
+
+This website provides information about:
+- **Rush/Recruitment**: Event calendars, FAQ, and interest forms for prospective members
+- **Organization History**: Learn about Trigon's traditions and heritage
+- **Leadership**: Information about current society leadership
+- **Social & Service**: Details about our community activities and service projects
+- **Newsletter**: Stay updated with the latest news and events
+
+## Technical Information
+
+This website is built with [Next.js](https://nextjs.org) and bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
@@ -20,9 +43,14 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Contact & Social Media
+
+- **Instagram:** [@trigonatuva](https://instagram.com/trigonatuva)
+- **Location:** 121 Shamrock Road, Charlottesville, VA
+
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about Next.js (the framework this site is built with):
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
