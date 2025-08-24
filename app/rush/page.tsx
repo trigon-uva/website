@@ -114,7 +114,7 @@ export default function Rush() {
                   color: "from-red-500 to-red-600"
                 },
                 {
-                  image: "/party1.jpg",
+                  image: "/party1.JPG",
                   title: "Around the World Party",
                   date: "SEP 5",
                   time: "10pm",
@@ -132,7 +132,7 @@ export default function Rush() {
                   color: "from-red-500 to-orange-500"
                 },
                 {
-                  image: "/canes2.jpg",
+                  image: "/canes2.JPG",
                   title: "Canes and Games on the Lawn",
                   date: "SEP 10",
                   time: "5pm - 8pm",
@@ -141,7 +141,7 @@ export default function Rush() {
                   color: "from-green-500 to-emerald-500"
                 },
                 {
-                  image: "/seven-deadly-sins.jpg",
+                  image: "/party1.JPG",
                   title: "7 Deadly Sins Party",
                   date: "SEP 12",
                   time: "10pm",

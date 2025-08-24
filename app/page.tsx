@@ -70,7 +70,7 @@ export default function Home() {
             <div className="relative group animate-slide-in-left">
               <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-modern-lg">
                 <Image 
-                  src="/newsletter-placeholder.jpg" 
+                  src="/trigonnobg.png" 
                   alt="Newsletter Cover" 
                   fill
                   className="object-cover transition-transform group-hover:scale-105" 
