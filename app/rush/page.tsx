@@ -1,36 +1,7 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Navbar from "../../components/Navbar";
-import Link from "next/link";
 import Image from "next/image";
-
-const carouselImages = [
-  { src: "/121-shamrock-road.jpg", alt: "121 Shamrock Road" },
-  { src: "/lawn.jpg", alt: "Trigon Lawn" },
-  { src: "/rush-hero.jpg", alt: "Rush Hero" },
-];
-
-function Carousel() {
-  const [index, setIndex] = useState(0);
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setIndex((prev) => (prev + 1) % carouselImages.length);
-    }, 3000);
-    return () => clearInterval(timer);
-  }, []);
-  return (
-    <div className="relative w-full h-full min-h-[350px] rounded-lg overflow-hidden bg-gray-200" style={{ height: '100%' }}>
-      {carouselImages.map((img, i) => (
-        <div
-          key={img.src}
-          className={`absolute inset-0 w-full h-full transition-opacity duration-700 ${i === index ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
-        >
-          <Image src={img.src} alt={img.alt} fill className="object-cover" />
-        </div>
-      ))}
-    </div>
-  );
-}
 
 export default function Rush() {
   return (
@@ -89,10 +60,10 @@ export default function Rush() {
                 <Image src="/bodos.jpg" alt="Bodo's Bagels Event" fill className="object-cover" />
               </div>
               <div className="p-5 flex-1 flex flex-col">
-                <div className="font-bold text-lg text-blue-900 mb-1">Bodo's Bagels on Eway</div>
+                <div className="font-bold text-lg text-blue-900 mb-1">Bodo&apos;s Bagels on Eway</div>
                 <div className="text-xs text-gray-500 mb-1">SEP 1 &bull; 9am - 12pm</div>
                 <div className="text-sm text-gray-700 mb-1">Location: Darden Courtyard</div>
-                <div className="text-gray-700 text-sm flex-1">Come enjoy some Bodo's Bagels and meet active brothers.</div>
+                <div className="text-gray-700 text-sm flex-1">Come enjoy some Bodo&apos;s Bagels and meet active brothers.</div>
               </div>
             </div>
             {/* Event 2 */}
