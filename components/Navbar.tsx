@@ -33,9 +33,9 @@ export default function Navbar() {
               height={48} 
               className="rounded-full transition-transform group-hover:scale-105" 
             />
-            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/20 to-red-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-red-500/20 to-red-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </div>
-          <span className="hidden sm:block font-bold text-lg bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
+          <span className="hidden sm:block font-bold text-lg bg-gradient-to-r from-red-800 to-red-600 bg-clip-text text-transparent">
             Trigon
           </span>
         </Link>
@@ -44,7 +44,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center space-x-8">
           {/* About Dropdown */}
           <div className="relative group">
-            <button className="flex items-center space-x-1 font-medium text-gray-700 hover:text-blue-600 transition-colors">
+            <button className="flex items-center space-x-1 font-medium text-gray-700 hover:text-red-600 transition-colors">
               <span>About</span>
               <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -52,18 +52,18 @@ export default function Navbar() {
             </button>
             <div className="absolute left-0 mt-2 w-48 glass rounded-xl shadow-modern-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2">
               <div className="py-2">
-                <Link href="/history" className="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors rounded-lg mx-2">History</Link>
-                <Link href="/social" className="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors rounded-lg mx-2">Social</Link>
-                <Link href="/service" className="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors rounded-lg mx-2">Service</Link>
-                <Link href="/leadership" className="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors rounded-lg mx-2">Leadership</Link>
+                <Link href="/history" className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors rounded-lg mx-2">History</Link>
+                <Link href="/social" className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors rounded-lg mx-2">Social</Link>
+                <Link href="/service" className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors rounded-lg mx-2">Service</Link>
+                <Link href="/leadership" className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors rounded-lg mx-2">Leadership</Link>
               </div>
             </div>
           </div>
 
-          <Link href="/newsletter" className="font-medium text-gray-700 hover:text-blue-600 transition-colors">
+          <Link href="/newsletter" className="font-medium text-gray-700 hover:text-red-600 transition-colors">
             Newsletter
           </Link>
-          <Link href="/leadership" className="font-medium text-gray-700 hover:text-blue-600 transition-colors">
+          <Link href="/leadership" className="font-medium text-gray-700 hover:text-red-600 transition-colors">
             Leadership
           </Link>
           <Link 
@@ -93,11 +93,11 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="md:hidden glass border-t border-white/20">
           <div className="px-6 py-4 space-y-3">
-            <Link href="/history" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors">History</Link>
-            <Link href="/social" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors">Social</Link>
-            <Link href="/service" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors">Service</Link>
-            <Link href="/leadership" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors">Leadership</Link>
-            <Link href="/newsletter" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors">Newsletter</Link>
+            <Link href="/history" className="block py-2 text-gray-700 hover:text-red-600 transition-colors">History</Link>
+            <Link href="/social" className="block py-2 text-gray-700 hover:text-red-600 transition-colors">Social</Link>
+            <Link href="/service" className="block py-2 text-gray-700 hover:text-red-600 transition-colors">Service</Link>
+            <Link href="/leadership" className="block py-2 text-gray-700 hover:text-red-600 transition-colors">Leadership</Link>
+            <Link href="/newsletter" className="block py-2 text-gray-700 hover:text-red-600 transition-colors">Newsletter</Link>
             <Link 
               href="/rush" 
               className="block text-center gradient-accent text-white font-semibold px-6 py-2.5 rounded-full mt-4"

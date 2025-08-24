@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-red-50">
       <Navbar />
       
       {/* Hero Section */}
@@ -17,25 +17,25 @@ export default function Home() {
           className="absolute inset-0"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-slate-900/50 to-red-900/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-red-900/70 via-slate-900/50 to-red-900/70"></div>
         
         {/* Floating geometric shapes */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-blue-500/10 rounded-full blur-xl animate-pulse"></div>
+          <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-red-500/10 rounded-full blur-xl animate-pulse"></div>
           <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-red-500/10 rounded-full blur-xl animate-pulse delay-1000"></div>
           <div className="absolute top-1/2 right-1/3 w-24 h-24 bg-white/5 rounded-full blur-lg animate-pulse delay-500"></div>
         </div>
 
         <div className="relative z-10 text-center px-6 max-w-5xl animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            <span className="block bg-gradient-to-r from-blue-200 to-white bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-red-200 to-white bg-clip-text text-transparent">
               Trigon
             </span>
-            <span className="block text-3xl md:text-5xl font-normal text-blue-100 mt-2">
+            <span className="block text-3xl md:text-5xl font-normal text-red-100 mt-2">
               Engineering Society
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-red-100 mb-8 max-w-3xl mx-auto leading-relaxed">
             Building tomorrow's leaders through engineering excellence, brotherhood, and service
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -87,7 +87,7 @@ export default function Home() {
             <div className="space-y-6 animate-fade-in-up">
               <div className="space-y-4">
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-                  Stay <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">Connected</span>
+                  Stay <span className="bg-gradient-to-r from-red-800 to-red-600 bg-clip-text text-transparent">Connected</span>
                 </h2>
                 <p className="text-xl text-gray-600 leading-relaxed">
                   Get the latest news, events, and stories from Trigon Engineering Society. Our quarterly newsletter keeps you updated on brotherhood activities, member achievements, and upcoming events.
@@ -99,13 +99,13 @@ export default function Home() {
                   href="/newsletters/spring-2025.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="gradient-primary text-white font-semibold px-8 py-4 rounded-xl hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-center"
+                  className="gradient-accent text-white font-semibold px-8 py-4 rounded-xl hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-center"
                 >
                   Read Newsletter
                 </Link>
                 <Link 
                   href="/newsletter" 
-                  className="border-2 border-gray-300 text-gray-700 font-semibold px-8 py-4 rounded-xl hover:border-blue-500 hover:text-blue-600 transition-all duration-300 text-center"
+                  className="border-2 border-gray-300 text-gray-700 font-semibold px-8 py-4 rounded-xl hover:border-red-500 hover:text-red-600 transition-all duration-300 text-center"
                 >
                   View Archive
                 </Link>
@@ -120,7 +120,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Explore <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">Trigon</span>
+              Explore <span className="bg-gradient-to-r from-red-800 to-red-600 bg-clip-text text-transparent">Trigon</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Discover what makes our engineering society unique through our pillars of excellence
@@ -134,7 +134,7 @@ export default function Home() {
                 description: "Building lifelong connections through shared experiences and mutual support",
                 icon: "👥",
                 href: "/social",
-                gradient: "from-blue-500 to-cyan-500"
+                gradient: "from-red-500 to-red-600"
               },
               {
                 title: "Service",

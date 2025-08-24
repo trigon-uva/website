@@ -50,7 +50,7 @@ function Carousel() {
 
 export default function Rush() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-red-50">
       <Navbar />
       
       {/* Hero Section */}
@@ -97,7 +97,7 @@ export default function Rush() {
           {/* Calendar Section */}
           <div className="mb-20 -mx-6 px-6 md:-mx-12 md:px-12 xl:-mx-48 xl:px-24">
             <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-4">
-              Rush <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">Calendar</span>
+              Rush <span className="bg-gradient-to-r from-red-800 to-red-600 bg-clip-text text-transparent">Calendar</span>
             </h2>
             <p className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
               Join us for these exciting events and discover what Trigon is all about
@@ -112,7 +112,7 @@ export default function Rush() {
                   time: "9am - 2pm",
                   location: "Darden Courtyard",
                   description: "Stop by our booth at the Engineering Expo to learn more about Trigon!",
-                  color: "from-blue-500 to-cyan-500"
+                  color: "from-red-500 to-red-600"
                 },
                 {
                   image: "/party1.jpg",
@@ -174,7 +174,7 @@ export default function Rush() {
           {/* FAQ Section */}
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-12">
-              Frequently Asked <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">Questions</span>
+              Frequently Asked <span className="bg-gradient-to-r from-red-800 to-red-600 bg-clip-text text-transparent">Questions</span>
             </h2>
             
             <div className="space-y-6">
