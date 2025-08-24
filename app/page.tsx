@@ -10,7 +10,7 @@ export default function Home() {
       {/* Hero Section */}
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <Image
-          src="/121-shamrock-road.jpg"
+          src="/reunion.jpg"
           alt="Trigon Engineering Society"
           fill
           style={{ objectFit: 'cover' }}
@@ -26,31 +26,18 @@ export default function Home() {
           <div className="absolute top-1/2 right-1/3 w-24 h-24 bg-white/5 rounded-full blur-lg animate-pulse delay-500"></div>
         </div>
 
-        <div className="relative z-10 text-center px-6 max-w-5xl animate-fade-in-up">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            <span className="block bg-gradient-to-r from-red-200 to-white bg-clip-text text-transparent">
-              Trigon
-            </span>
-            <span className="block text-3xl md:text-5xl font-normal text-red-100 mt-2">
-              Engineering Society
-            </span>
-          </h1>
-          <p className="text-xl md:text-2xl text-red-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Building tomorrow's leaders through engineering excellence, brotherhood, and service
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="/rush" 
-              className="gradient-accent text-white font-semibold px-8 py-4 rounded-full hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-lg"
-            >
-              Join Our Brotherhood
-            </Link>
-            <Link 
-              href="/about" 
-              className="glass text-gray-800 font-semibold px-8 py-4 rounded-full hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-lg"
-            >
-              Learn More
-            </Link>
+        <div className="relative z-10 text-center px-6 max-w-5xl animate-fade-in-up flex flex-col min-h-[90vh] justify-between pb-24">
+          <div className="mt-48">
+            <div className="relative w-full max-w-3xl mx-auto">
+              <Image
+                src="/trigon-wordmark-nobg.png"
+                alt="Trigon Engineering Society"
+                width={1200}
+                height={300}
+                priority
+                className="w-full h-auto invert brightness-200"
+              />
+            </div>
           </div>
         </div>
 
