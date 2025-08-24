@@ -45,12 +45,12 @@ export default function Home() {
             >
               Join Our Brotherhood
             </Link>
-            <Link 
-              href="/about" 
+            <a 
+              href="#" 
               className="glass text-gray-800 font-semibold px-8 py-4 rounded-full hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-lg"
             >
               Learn More
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -95,20 +95,18 @@ export default function Home() {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link 
-                  href="/newsletters/spring-2025.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a 
+                  href="#" 
                   className="gradient-accent text-white font-semibold px-8 py-4 rounded-xl hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-center"
                 >
                   Read Newsletter
-                </Link>
-                <Link 
-                  href="/newsletter" 
+                </a>
+                <a 
+                  href="#" 
                   className="border-2 border-gray-300 text-gray-700 font-semibold px-8 py-4 rounded-xl hover:border-red-500 hover:text-red-600 transition-all duration-300 text-center"
                 >
                   View Archive
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -133,25 +131,25 @@ export default function Home() {
                 title: "Brotherhood",
                 description: "Building lifelong connections through shared experiences and mutual support",
                 icon: "👥",
-                href: "/social",
+                href: "#",
                 gradient: "from-red-500 to-red-600"
               },
               {
                 title: "Service",
                 description: "Making a positive impact in our community through meaningful volunteer work",
                 icon: "🤝",
-                href: "/service",
+                href: "#",
                 gradient: "from-green-500 to-emerald-500"
               },
               {
                 title: "Leadership",
                 description: "Developing tomorrow's engineering leaders through hands-on experience",
                 icon: "⭐",
-                href: "/leadership",
+                href: "#",
                 gradient: "from-orange-500 to-red-500"
               }
             ].map((item) => (
-              <Link key={item.title} href={item.href} className="group">
+              <a key={item.title} href={item.href} className="group">
                 <div className="bg-white rounded-2xl p-8 shadow-modern hover:shadow-modern-lg transition-all duration-300 transform group-hover:scale-105 border border-gray-100">
                   <div className={`w-16 h-16 bg-gradient-to-r ${item.gradient} rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:rotate-6 transition-transform`}>
                     {item.icon}
@@ -159,7 +157,7 @@ export default function Home() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">{item.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{item.description}</p>
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

@@ -52,20 +52,20 @@ export default function Navbar() {
             </button>
             <div className="absolute left-0 mt-2 w-48 glass rounded-xl shadow-modern-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2">
               <div className="py-2">
-                <Link href="/history" className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors rounded-lg mx-2">History</Link>
-                <Link href="/social" className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors rounded-lg mx-2">Social</Link>
-                <Link href="/service" className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors rounded-lg mx-2">Service</Link>
-                <Link href="/leadership" className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors rounded-lg mx-2">Leadership</Link>
+                <a href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors rounded-lg mx-2">History</a>
+                <a href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors rounded-lg mx-2">Social</a>
+                <a href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors rounded-lg mx-2">Service</a>
+                <a href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors rounded-lg mx-2">Leadership</a>
               </div>
             </div>
           </div>
 
-          <Link href="/newsletter" className="font-medium text-gray-700 hover:text-red-600 transition-colors">
+          <a href="#" className="font-medium text-gray-700 hover:text-red-600 transition-colors">
             Newsletter
-          </Link>
-          <Link href="/leadership" className="font-medium text-gray-700 hover:text-red-600 transition-colors">
+          </a>
+          <a href="#" className="font-medium text-gray-700 hover:text-red-600 transition-colors">
             Leadership
-          </Link>
+          </a>
           <Link 
             href="/rush" 
             className="gradient-accent text-white font-semibold px-6 py-2.5 rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-200"
@@ -93,11 +93,11 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="md:hidden glass border-t border-white/20">
           <div className="px-6 py-4 space-y-3">
-            <Link href="/history" className="block py-2 text-gray-700 hover:text-red-600 transition-colors">History</Link>
-            <Link href="/social" className="block py-2 text-gray-700 hover:text-red-600 transition-colors">Social</Link>
-            <Link href="/service" className="block py-2 text-gray-700 hover:text-red-600 transition-colors">Service</Link>
-            <Link href="/leadership" className="block py-2 text-gray-700 hover:text-red-600 transition-colors">Leadership</Link>
-            <Link href="/newsletter" className="block py-2 text-gray-700 hover:text-red-600 transition-colors">Newsletter</Link>
+            <a href="#" className="block py-2 text-gray-700 hover:text-red-600 transition-colors">History</a>
+            <a href="#" className="block py-2 text-gray-700 hover:text-red-600 transition-colors">Social</a>
+            <a href="#" className="block py-2 text-gray-700 hover:text-red-600 transition-colors">Service</a>
+            <a href="#" className="block py-2 text-gray-700 hover:text-red-600 transition-colors">Leadership</a>
+            <a href="#" className="block py-2 text-gray-700 hover:text-red-600 transition-colors">Newsletter</a>
             <Link 
               href="/rush" 
               className="block text-center gradient-accent text-white font-semibold px-6 py-2.5 rounded-full mt-4"
