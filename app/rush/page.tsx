@@ -149,7 +149,7 @@ export default function Rush() {
                   description: "Come have fun at the Trigon House and meet the brothers.",
                   color: "from-purple-500 to-pink-500"
                 }
-              ].map((event, index) => (
+              ].map((event) => (
                 <div key={event.title} className="group">
                   <div className="bg-white rounded-2xl overflow-hidden shadow-modern hover:shadow-modern-lg transition-all duration-300 transform group-hover:scale-105">
                     <div className="relative h-48">
@@ -235,7 +235,7 @@ export default function Rush() {
             </div>
             <div className="text-center md:text-right">
               <p className="text-2xl font-italic text-gray-300 mb-4">
-                "Per dilligentium crescunt frucuts laboris"
+                &quot;Per dilligentium crescunt frucuts laboris&quot;
               </p>
               <p className="text-gray-400">
                 Through diligence grow the fruits of labor

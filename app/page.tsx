@@ -36,7 +36,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-red-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Building tomorrow's leaders through engineering excellence, brotherhood, and service
+            Building tomorrow&apos;s leaders through engineering excellence, brotherhood, and service
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
@@ -150,7 +150,7 @@ export default function Home() {
                 href: "/leadership",
                 gradient: "from-orange-500 to-red-500"
               }
-            ].map((item, index) => (
+            ].map((item) => (
               <Link key={item.title} href={item.href} className="group">
                 <div className="bg-white rounded-2xl p-8 shadow-modern hover:shadow-modern-lg transition-all duration-300 transform group-hover:scale-105 border border-gray-100">
                   <div className={`w-16 h-16 bg-gradient-to-r ${item.gradient} rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:rotate-6 transition-transform`}>
@@ -191,7 +191,7 @@ export default function Home() {
             </div>
             <div className="text-center md:text-right">
               <p className="text-2xl font-italic text-gray-300 mb-4">
-                "Per dilligentium crescunt frucuts laboris"
+                &quot;Per dilligentium crescunt frucuts laboris&quot;
               </p>
               <p className="text-gray-400">
                 Through diligence grow the fruits of labor
