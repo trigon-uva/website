@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
+import { getImagePath } from "../lib/utils";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       {/* Hero Section */}
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <Image
-          src="/121-shamrock-road.jpg"
+          src={getImagePath("/121-shamrock-road.jpg")}
           alt="Trigon Engineering Society"
           fill
           style={{ objectFit: 'cover' }}
@@ -70,7 +71,7 @@ export default function Home() {
             <div className="relative group animate-slide-in-left">
               <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-modern-lg">
                 <Image 
-                  src="/trigonnobg.png" 
+                  src={getImagePath("/trigonnobg.png")} 
                   alt="Newsletter Cover" 
                   fill
                   className="object-cover transition-transform group-hover:scale-105" 
@@ -168,7 +169,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex items-center space-x-6">
-              <Image src="/trigonnobg.png" alt="Trigon Logo" width={80} height={80} className="rounded-full shadow-lg" />
+              <Image src={getImagePath("/trigonnobg.png")} alt="Trigon Logo" width={80} height={80} className="rounded-full shadow-lg" />
               <div>
                 <h3 className="text-2xl font-bold mb-2">Trigon Engineering Society</h3>
                 <p className="text-gray-300 mb-2">University of Virginia • Charlottesville, VA</p>

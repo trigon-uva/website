@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { getImagePath } from "../lib/utils";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,7 +28,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-3 group">
           <div className="relative">
             <Image 
-              src="/trigonnobg.png" 
+              src={getImagePath("/trigonnobg.png")} 
               alt="Trigon Logo" 
               width={48} 
               height={48} 

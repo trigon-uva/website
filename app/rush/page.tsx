@@ -2,10 +2,11 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar";
 import Image from "next/image";
+import { getImagePath } from "../../lib/utils";
 
 const carouselImages = [
-  { src: "/group.jpg", alt: "Trigon Brotherhood" },
-  { src: "/rnb.jpg", alt: "Member Class 2025" },
+  { src: getImagePath("/group.jpg"), alt: "Trigon Brotherhood" },
+  { src: getImagePath("/rnb.jpg"), alt: "Member Class 2025" },
 ];
 
 function Carousel() {
@@ -105,7 +106,7 @@ export default function Rush() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10">
               {[
                 {
-                  image: "/expo.png",
+                  image: getImagePath("/expo.png"),
                   title: "Engineering Expo Booth",
                   date: "AUG 26",
                   time: "9am - 2pm",
@@ -114,7 +115,7 @@ export default function Rush() {
                   color: "from-red-500 to-red-600"
                 },
                 {
-                  image: "/party1.JPG",
+                  image: getImagePath("/party1.JPG"),
                   title: "Around the World Party",
                   date: "SEP 5",
                   time: "10pm",
@@ -123,7 +124,7 @@ export default function Rush() {
                   color: "from-purple-500 to-pink-500"
                 },
                 {
-                  image: "/football-watch-party.jpg",
+                  image: getImagePath("/football-watch-party.jpg"),
                   title: "Football Game Watch Party",
                   date: "SEP 6",
                   time: "12pm - 4pm",
@@ -132,7 +133,7 @@ export default function Rush() {
                   color: "from-red-500 to-orange-500"
                 },
                 {
-                  image: "/canes2.JPG",
+                  image: getImagePath("/canes2.JPG"),
                   title: "Canes and Games on the Lawn",
                   date: "SEP 10",
                   time: "5pm - 8pm",
@@ -141,7 +142,7 @@ export default function Rush() {
                   color: "from-green-500 to-emerald-500"
                 },
                 {
-                  image: "/party1.JPG",
+                  image: getImagePath("/party1.JPG"),
                   title: "7 Deadly Sins Party",
                   date: "SEP 12",
                   time: "10pm",
@@ -214,7 +215,7 @@ export default function Rush() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex items-center space-x-6">
-              <Image src="/trigonnobg.png" alt="Trigon Logo" width={80} height={80} className="rounded-full shadow-lg" />
+              <Image src={getImagePath("/trigonnobg.png")} alt="Trigon Logo" width={80} height={80} className="rounded-full shadow-lg" />
               <div>
                 <h3 className="text-2xl font-bold mb-2">Trigon Engineering Society</h3>
                 <p className="text-gray-300 mb-2">University of Virginia • Charlottesville, VA</p>
