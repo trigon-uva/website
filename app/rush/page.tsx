@@ -100,7 +100,7 @@ export default function Rush() {
             </h2>
             <p className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
               Join us for these exciting events and discover what Trigon is all about
-            </p>
+            </p> 
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10">
               {[ 
