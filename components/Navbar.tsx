@@ -42,8 +42,8 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          {/* About Dropdown */}
-          <div className="relative group">
+          {/*About Dropdown
+           <div className="relative group">
             <button className="flex items-center space-x-1 font-medium text-gray-700 hover:text-red-600 transition-colors">
               <span>About</span>
               <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -65,7 +65,7 @@ export default function Navbar() {
           </a>
           <a href="#" className="font-medium text-gray-700 hover:text-red-600 transition-colors">
             Leadership
-          </a>
+          </a> */}
           <Link 
             href="/rush" 
             className="gradient-accent text-white font-semibold px-6 py-2.5 rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-200"

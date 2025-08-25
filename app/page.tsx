@@ -49,11 +49,10 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Newsletter Section */}
+      {/* Newsletter Section 
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Newsletter Image */}
             <div className="relative group animate-slide-in-left">
               <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-modern-lg">
                 <Image 
@@ -64,13 +63,11 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
-              {/* Floating badge */}
               <div className="absolute -top-4 -right-4 bg-red-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
                 Latest Issue
               </div>
             </div>
 
-            {/* Newsletter Content */}
             <div className="space-y-6 animate-fade-in-up">
               <div className="space-y-4">
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
@@ -98,7 +95,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Quick Links Section */}
       <section className="py-20 px-6 bg-white">
