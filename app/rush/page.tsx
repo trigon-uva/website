@@ -123,7 +123,7 @@ export default function Rush() {
                   color: "from-yellow-500 to-yellow-600"
                 },
                 {
-                  image: "/party1.jpg",
+                  image: "/around-the-world.jpg",
                   title: "Around the World Party",
                   date: "SEP 5",
                   time: "10pm",
